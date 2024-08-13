@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @Builder
-public class OwnerDto {
-    private Long id;
-    private String name;
-    private String surname;
-    private Integer age;
+@Data
+public class CarDto {
+    private String vin;
+    private String model;
+    private Integer mileage;
+    private OwnerDto owner;
 }
