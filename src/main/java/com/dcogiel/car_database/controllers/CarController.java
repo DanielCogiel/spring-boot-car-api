@@ -14,8 +14,8 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping(path = "/cars")
 public class CarController {
-    private CarService service;
-    private Mapper<CarEntity, CarDto> mapper;
+    private final CarService service;
+    private final Mapper<CarEntity, CarDto> mapper;
 
     public CarController(CarService carService, Mapper<CarEntity, CarDto> carMapper) {
         this.service = carService;
