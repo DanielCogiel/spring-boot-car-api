@@ -15,8 +15,8 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping(path = "/owners")
 public class OwnerController {
-    private OwnerService service;
-    private Mapper<OwnerEntity, OwnerDto> mapper;
+    private final OwnerService service;
+    private final Mapper<OwnerEntity, OwnerDto> mapper;
 
     public OwnerController(OwnerService ownerService, Mapper<OwnerEntity, OwnerDto> ownerMapper) {
         this.service = ownerService;
